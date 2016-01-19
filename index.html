@@ -2,21 +2,21 @@
 <html ng-app="shareDraw">
 <head>
   <meta charset="utf-8">
-  <title>Shared White-Board Canvas</title>
+  <title>Shared CRUD dbObjects</title>
   <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
 </head>
 
 <body ng-controller="mainCtrl">
   <div id="navWrapper">
     <div class="navBar">
-      <span><a class="buttons" ui-sref="view2">white-board</a></span>
-      <span><a class="buttons" ui-sref="view1">view1</a></span>
+      <span><a class="buttons" ui-sref="rawDataObjects">Data</a></span>
+      <span><a class="buttons" ui-sref="cRUD">CRUD</a></span>
       <span><a class="buttons" ui-sref="auth">Sign up</a></span>
     </div>
   </div>
   </hr>
   <div class="defaultUiWrapper">
-    <!-- this ui-view for game-board, view10 auth, and landing by state changes -->
+    <!-- this ui-view for game-board, cRUD0 auth, and landing by state changes -->
     <!-- routes,sets a format for windows/views using ui-router and URL hashes-->
     <ui-view></ui-view>
 
@@ -44,18 +44,18 @@
   <!-- views controllers -->
   <script src="./js/views/landing/landingCtrl.js"></script>
   <script src="./js/views/auth/authCtrl.js"></script>
-  <script src="./js/views/view1/view1Ctrl.js"></script>
-  <script src="./js/views/view2/view2Ctrl.js"></script>
+  <script src="./js/views/view1/cRUDCtrl.js"></script>
+  <script src="./js/views/view2/rawDataObjectsCtrl.js"></script>
 
-  <!-- canvas pane -->
-  <script src="./js/directives/canvas/canvasCtrl.js"></script>
-  <script src="./js/directives/canvas/canvasDir.js"></script>
-  <script src="./js/directives/canvas/canvasSvc.js"></script>
+  <!-- dbObjects pane -->
+  <script src="./js/directives/dbObjects/dbObjectsCtrl.js"></script>
+  <script src="./js/directives/dbObjects/dbObjectsDir.js"></script>
+  <script src="./js/directives/dbObjects/dbObjectsSvc.js"></script>
 
-  <!-- chat pane -->
-  <script src="./js/directives/chat/chatCtrl.js"></script>
-  <script src="./js/directives/chat/chatDir.js"></script>
-  <script src="./js/directives/chat/chatSvc.js"></script>
+  <!-- cRUD pane -->
+  <script src="./js/directives/cRUD/cRUDCtrl.js"></script>
+  <script src="./js/directives/cRUD/cRUDDir.js"></script>
+  <script src="./js/directives/cRUD/cRUDSvc.js"></script>
 
   <!-- copyright pane -->
   <script src="./js/directives/copyright/copyrightCtrl.js"></script>

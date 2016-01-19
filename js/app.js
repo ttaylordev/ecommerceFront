@@ -5,7 +5,7 @@ angular.module( 'shareDraw', [ 'firebase', 'ui.router' ] )
     // console.log('from app.config: app.js is logging');
     //might have a constant to inject into services
     $stateProvider
-    // view1 state and nested views
+    // cRUD state and nested views
       .state( 'landing', {
         url: '/landing',
         templateUrl: './js/views/landing/landingTmpl.html',
@@ -14,7 +14,7 @@ angular.module( 'shareDraw', [ 'firebase', 'ui.router' ] )
         //   //make sure it does this before it loads up that state
         // }
       } )
-      // view1 state and nested views
+      // cRUD state and nested views
       .state( 'auth', {
         url: '/auth',
         templateUrl: './js/views/auth/authTmpl.html',
@@ -24,20 +24,20 @@ angular.module( 'shareDraw', [ 'firebase', 'ui.router' ] )
         // }
       } )
 
-    // view1 state and nested views
-    .state( 'view1', {
-        url: '/view1',
-        templateUrl: './js/views/view1/view1Tmpl.html',
-        controller: 'view1Ctrl',
+    // cRUD state and nested views
+    .state( 'cRUD', {
+        url: '/cRUD',
+        templateUrl: './js/views/view1/cRUDTmpl.html',
+        controller: 'cRUDCtrl',
         // link: function(scope, element, attributes) {
         //
         // }
       } )
       // game-board state and nested panes/views
-      .state( 'view2', {
-        url: '/view2',
-        templateUrl: './js/views/view2/view2Tmpl.html',
-        controller: 'view2Ctrl',
+      .state( 'rawDataObjects', {
+        url: '/rawDataObjects',
+        templateUrl: './js/views/view2/rawDataObjectsTmpl.html',
+        controller: 'rawDataObjectsCtrl',
         // link: function(scope, element, attributes) {
         //
         //   } // we'll get to this in a bit

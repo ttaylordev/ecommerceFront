@@ -1,16 +1,16 @@
 angular.module('shareDraw')
-  .controller('view1Ctrl', function($scope, chatSvc, mainSvc, $state) { // inject dependancies, $scope and Svc's
+  .controller('cRUDCtrl', function($scope, cRUDSvc, mainSvc, $state) { // inject dependancies, $scope and Svc's
     //logging and testing
     if (!$scope.$parent.authData){
       console.log("Hmmm");
       $state.go('landing');
     }
-    console.log('view1Ctrl is logging inside');
-    $scope.testview1Ctrl = 'view1Ctrl is working';
+    console.log('cRUDCtrl is logging inside');
+    $scope.testcRUDCtrl = 'cRUDCtrl is working';
   });
 
   //logging and testing
-// console.log('view1Ctrl is logging outside');
+// console.log('cRUDCtrl is logging outside');
 
 
 /* the controller is where data is stored to variables

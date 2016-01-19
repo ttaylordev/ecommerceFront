@@ -1,7 +1,7 @@
 angular.module( 'shareDraw' )
   .service( 'mainSvc', function( $firebaseObject, $firebaseArray, $firebaseAuth ) {
     // declare firebase url and dom context.
-    var baseUrl = 'yourFbUrlHere/';
+    var baseUrl = 'https://dmecommerce.firebaseio.com/data';
     //testing connectivity
     // var self = this; //self. will be put on the outer scope
     //this only references the service, not the controllers
@@ -36,7 +36,7 @@ angular.module( 'shareDraw' )
     // it's not a service function, it's object specific.
     this.loggedIn = function() {};
 
-    var firebaseRoot = "yourFbUrlHere";
+    var firebaseRoot = "https://dmecommerce.firebaseio.com/data";
     var ref = new Firebase( firebaseRoot );
     var authObj = $firebaseAuth( ref );
     // Assign authObj to scope for inline calls in the view

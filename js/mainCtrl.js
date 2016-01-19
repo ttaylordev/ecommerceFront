@@ -6,7 +6,7 @@ angular.module( 'shareDraw' )
     // consstole.log('MainCtrl is logging');
     // adding tests for mainSvc to the DOM
     // $scope.testMainSvc = mainSvc.getMainSvc();
-    var firebaseRoot = "yourFbUrlHere";
+    var firebaseRoot = "https://dmecommerce.firebaseio.com/data/";
     var ref = new Firebase( firebaseRoot );
     var authObj = $firebaseAuth( ref );
 
@@ -17,7 +17,7 @@ angular.module( 'shareDraw' )
         $scope.user = user;
         $scope.authData = authData;
         console.log( $scope.user );
-        $state.go( 'view1' );
+        $state.go( 'cRUD' );
       }, function( error ) {
         alert( error );
       } );

@@ -1,10 +1,10 @@
 angular.module('shareDraw')
-  .service('canvasSvc', function() {
+  .service('dbObjectsSvc', function() {
 
-    this.testCanvasSvc = function(){
-      var canvasSvcIsLoading = 'canvasSvc is loading';
-      // console.log('From: canvasSvc via canvasCtrl: canvasSvc is logging');
-      return canvasSvcIsLoading;
+    this.testdbObjectsSvc = function(){
+      var dbObjectsSvcIsLoading = 'dbObjectsSvc is loading';
+      // console.log('From: dbObjectsSvc via dbObjectsCtrl: dbObjectsSvc is logging');
+      return dbObjectsSvcIsLoading;
     };
 
   });
